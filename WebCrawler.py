@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 class WebCrawler:
     def get_html(self, url):
         try:
@@ -18,6 +19,7 @@ class WebCrawler:
     def save_html(self, url):
         with open("save_html.html", "w") as f:
             f.write(self.get_html(url))
+
 
 if __name__ == "__main__":
     pass
